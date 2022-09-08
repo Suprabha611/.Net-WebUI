@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Internship </title>
+        <style> 
+        *{
+            box-sizing: border-box;
+        }
+        .parent{
+            width:100%;
+            float:center;
+        }
+        .header{
+            text-align: center;
+            height: 110px;
+            background-color:rgb(241, 234, 209);
+            background-image: url(Images/img8.jpg);
+            border:4px black;
+            color:black;
+            padding: 10px;
+        }
+        .left{
+            width: 20%;
+            height:600px;
+            background-color:rgb(201, 198, 198);
+            background-image: url(Images/img7.jpeg);
+            border:2px solid black;
+            float:left;
+        }
+        .vertical{
+            list-style-type:circle;
+            margin:0;
+            margin-top: 20px;
+            padding:30px;
+            width:180px;
+            position:static;
+            overflow:auto;
+            height:100%;
+        }
+        li a.verticalnav{
+            display:grid;
+            color:rgb(6, 47, 152);
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: larger;
+        }
+        li a.verticalnav:hover{
+            background-color:rgb(236, 201, 111);
+            font-size:large;
+        }
+        .center{
+            width: 50%;
+            height:600px;
+            text-align:justify;
+            background-color:white;
+            border-left:2px solid darkblue;
+            border-bottom: 2px solid darkblue;
+            border-top:2px solid darkblue ;
+            padding-left: 15px;
+            float:left;
+        }
+        .centertext{
+            
+            height: 60px;
+            float: center;
+            background-color: black;
+            color:lime;
+            padding-left: 70px;
+            padding-top: 20px;
+        }
+        .right{
+            width: 30%;
+            height:600px;
+            background-color:white;
+            border-right:1px solid darkblue;
+            padding-top:160px;
+            border-bottom: 2px solid darkblue;
+            border-top:2px solid darkblue ;
+            float:left;
+        }
+        .last{
+            width: 100%;
+            height: 800px;
+            background-color: white;
+            border: black;
+        }
+        .footer{
+            height:200px;
+            text-align: center;
+            background-image: url(Images/img8.jpg);
+            border:2px solid brown;
+            color:black;
+            padding: 10px;
+        }
+        @media screen and (max-width:1000px)
+        {
+            iframe{
+                height:80px;
+                width:80px;
+            }
+            li a.verticalnav{
+            display:block;
+            color:rgb(139, 0, 139);
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        p{
+            font-size: 12px;
+        }
+        img{
+            display: none;
+        }
+        .ul_media{
+            display:none;
+        }
+        }
+        @media screen and (max-width:600px)
+        {
+            iframe{
+                height:70px;
+                width:60px;
+            }
+            li a.verticalnav{
+            display:block;
+            color:rgb(139, 0, 0);
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 8px;
+        }
+        p{
+            font-size: 8px;
+        }
+        .media{
+            display:none;
+        }
+        img{
+            display: none;
+        }
+        .ul_media{
+            display:none;
+        }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="header">
+                <h1> <font color="#8B0000">DLithe Internships</font></h1> <h6 align="right"><font color="red"> Address: No. 280. 3rd Floor SLV ARCADE. 100 Feet Ring Road, BSK 3rd Stage, Bangalore-560070 </font></h6>
+            </div>
+            <div>
+                <div class="left">
+                    <ul class="vertical">
+                        <li><a class="verticalnav" href="#Welcome to Dlithe"> <b>About Us</b></a></li>
+                        <li><a class="verticalnav" href="#Internships Provided"><b>Internship Search</b></a></li>
+                        <li><a class="verticalnav" href="#Search"><b>Internships Provided </b></a> </li>
+                        <li><a class="verticalnav" href="Internships Registration.html" target="_blank"><b>Registrations</b></a></li>
+                        <li><a class="verticalnav" href="#footer"><b>Contact Us</b></a></li>
+                        <li><a class="verticalnav" href="#footer"><b>Social Media Handles</b></a></li>
+                    </ul>
+                </div>
+                <div class="center">
+                    <a name="Welcome to D'Lithe!!"></a>
+                    <h1 align="center"> Welcome to DLithe!!</h1>
+                        <img src= "Images/img3.jpg" width="35" height="40" style="float: left; color: black;"> We enable the student's community to bridge gaps between academics and industry. Developing an Agile workforce, Placement training & mentoring hackathons, Internship platforms are making resource employable.<br> <br>
+                        <img src= "Images/img5.jpg" width="35" height="40" style="float: left;"><ins><b>Industry Experience:</b></ins> We are from the Industry. We have the best combination of HR & Engineering principles. We understand corporate & resource needs better. <br> <br>
+                        <img src= "Images/img4.jpg" width="35" height="40" style="float: left;"><ins><b>Experts Base:</ins></b></ins> Our experts are industry professionals who understand the need of the hour towards human resource development <br> <br>
+                        <img src= "Images/img6.jpg" width="36" height="45" style="float: left;"><ins><b>Transformation</b></ins> We have kept our pace with Industry. We love to work with the young generation. We believe Intelligent Quotient, Emotional Quotient, Domain & Technology quotient are equally important, we transform resource competence</p>
+                        <hr>
+                        <div class="centertext">
+                            <a name="Search"></a>
+                            <form>
+                                <label>Find an Internship: </label>
+                                <input type="text" placeholder="Internship..">
+                                <button type="Submit"></button>
+                            </form>
+                        </div>
+                        <br> <br>
+                        <a href="https://dlithe.com/" target="_blank" ><img align="center" src="Images/img9.png" width="260px" height="150px"> </a>
+                    </div>
+                <div class="right">
+                    <iframe align="middle" width="355" height="250" src="https://www.youtube.com/embed/Gxtt4GEMxLQ" picture-in-picture allowfullscreen></iframe>
+                </div>
+            </div>
+            <br> <br>
+            <div class="last">
+                <a name="Internships Provided"></a>
+                <table align="center" border="1" cellspacing="3" cellpadding="7">
+                    <caption> <b>Internships Provided By Us: </b> </caption> <br> <br>
+                    <tr>
+                        <th>Programming</th><th>Technologies</th><th>Designing</th><th>Marketing</th>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                        <ul>
+                            <li> JAVA</li>
+                            <li> Python</li> 
+                            <li> C</li> 
+                            <li> CPP</li> 
+                            <li> C#</li>
+                        </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Front-End Technologies</li>
+                                <li>Cyber Security</li>
+                                <li>BlockChain</li>
+                                <li>.NET</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>CAD </li>
+                                <li>Graphic Designing</li>
+                            </ul> 
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Business Management</li>
+                                <li>HR Training</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer"> <a name="footer"></a>
+                <h3>&copy; https://dlithe.com/</h3>
+                <h4 align="left">Contact Us @ <br> <a href="info@dlithe.com"> Email: info@dlithe.com </a> <br>Phone: +91-9008815252</h4>
+                <p align="right"> <b>Follow us on: </b> <br> 
+                <a href="https://www.youtube.com/channel/UC1mV-BHo7N177a_DLac_u9Q" target="_blank"> <img width="23px" height="22px" src="Images/img11.jpg"> <a href="https://www.facebook.com/Dlitheconsultancyservices" target="_blank"><img width="30px" height="22px" src="Images/img12.png"> </a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

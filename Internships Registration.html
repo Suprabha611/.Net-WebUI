@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title> Internship Registration </title>
+    <style>
+        .full{
+            width:80%;
+            height: 100%;
+            background-image: url(Images/img10.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+    <h1 align="center"> Registration Form </h1>
+        <form action ="">
+            <fieldset>
+                <legend> Registration Form </legend>
+                <label> First Name </label> <br>
+                <input type="text" name="fname" required> </br> <br>
+                <label> Last Name </label> <br>
+                <input type="text" name="lname"> </br> <br>
+                <label> Email Id</label> <br>
+                <input type="email" name="Email Id" required> </br> <br>
+                <label> Gender </label> <br>
+                <input type="radio" id="gender" name="gender" value= "Male"> Male <br>
+                <input type="radio" id="gender" name="gender" value= "Female"> Female <br> <br>
+                <label> Mobile Number </label> <br>
+                <input type="tel" id="number" placeholder="Enter a 10 digit valid number" max="[0-9]{10}" required> <br>
+                <button> Get OTP </button> <br>
+                <label> Enter OTP</label> <br>
+                <input type="text" id="otp" name="otp" max="6" placeholder="XXXXXX"> <br> <br>
+                <label> Select Course </label> <br>
+                <select name= "Course">
+                    <optgroup label="Programming">
+                        <option> JAVA </option>
+                        <option> C </option>
+                        <option> C++</option>
+                        <option> C# </option>
+                        <option> Python</option>
+                    </optgroup>
+                    <optgroup label="Technologies">
+                        <option> Front-End Technologies </option>
+                        <option> BlockChain </option> 
+                        <option>Cyber Security</option>
+                        <option>.NET</option>
+                    <optgroup label="Designing">
+                        <option>CAD</option>
+                        <option>Graphic Designing</option>
+                    </optgroup>
+                    <optgroup label="Marketing">
+                        <option>HR Training</option>
+                        <option>Business Management</option>
+                    </optgroup>
+                </select> <br> <br>
+                <button> Submit </button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
