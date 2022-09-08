@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <script>
+        document.write ("1."+ "<br>")
+        var a=7;
+        if (a%2==0)
+        document.write ("Number" +a+ "is Even"+"<br>");
+        else
+        document.write ("Number is odd"+"<br> <br>");
+        
+        document.write ("2."+ "<br>");
+        var b = 15, c = 17, temp=0;
+        document.write("Before Swapping: b =" +b +", c ="+c);
+        temp = b;
+        b = c;
+        c = temp;
+        document.write("<br>After Swapping: b = " +b+", c = "+c);
+        var d=34, e=87;
+        [d,e]=[e,d];
+        document.write("<br>After Swapping: d = " +d+", e = "+e +"<br> <br>");
+
+        document.write ("3."+ "<br>")
+        var students = [['JAVA', 82], ['CPP', 70], ['C#', 75], ['HTML', 95], ['PYTHON', 68]];
+        var p = 0;
+        for (var i=0; i < 5; i++) {
+                p += students[i][1];
+                var per = (p/500)*100;
+        }
+        document.write("Percentage: " + per+ "%, " );
+        if (per > 80){
+            document.write("Grade : A");      
+        } 
+        else if (per>60 && per<= 80) {
+            document.write("Grade : B"); 
+        } 
+        else if (per>45 && per<= 60) {
+            document.write("Grade : C"); 
+        } 
+        else {
+            document.write("Grade : F"); 
+        }
+        document.write("<br> <br>")
+        document.write ("4."+ "<br>");
+        function reverse(n)
+        {
+            n = n + "";
+            return n.split("").reverse().join("");
+        }
+        document.write("Reverse=" +Number(reverse(17254)));
+
+        document.write("<br> <br>");
+        document.write ("5."+ "<br>");
+        function factorial(x) 
+        { 
+            if (x === 0)
+             return 1;
+            return x * factorial(x-1);        
+        }
+        document.write("Factorial = "+ factorial(7));
+    </script>
+</body>
+</html>
