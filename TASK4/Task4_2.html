@@ -31,9 +31,10 @@
                         <p id="done"></p>
                         <script>
                             function success() {
-                            document.getElementById("done").innerHTML = alert("Login Sucess for IT!!");
+                            document.getElementById("done").innerHTML = alert("Login Success for IT!!");
                         }
                         </script>
+                    </div>
                 </form>
             </div>
             <div id="id2" class="start">
@@ -50,15 +51,15 @@
                         <input type="password" placeholder="Enter Password" name="psw" required>
                         <label> <b> Employee Id</b> </label>
                         <input type="number" placeholder="Enter EID" name="eid" required>
-                        <p><button onclick="success()">Login!</button></p>
+                        <p><button type="submit" onclick="success()">Login!</button></p>
+                        <p id="done"></p>
+                        <script>
+                            function success() {
+                                document.getElementById("done").innerHTML = alert("Login Success for Admin!!");
+                            }
+                        </script>
                     </div>
                 </form>
-                <p id="done"></p>
-                <script>
-                    function success() {
-                        document.getElementById("done").innerHTML = alert("Login Sucess!!");
-                    }
-                </script>
             </div>
             <div id="id3" class="start">
                 <form class="start-content animate" method="post">
@@ -74,15 +75,16 @@
                         <input type="password" placeholder="Enter Password" name="psw" required>
                         <label> <b> Employee Id</b> </label>
                         <input type="number" placeholder="Enter EID" name="eid" required>
-                        <p><button onclick="success()">Login!</button></p>
+                        <p><button type="submit" onclick="success()">Login!</button></p>
+                        <p id="done"></p>
+                        <script>
+                            function success() {
+                                document.getElementById("done").innerHTML = alert("Login Success for Tester!!");
+                            }
+                        </script>
                     </div>
                 </form>
-                <p id="done"></p>
-                <script>
-                    function success() {
-                        document.getElementById("done").innerHTML = alert("Login Sucess!!");
-                    }
-                </script>
+                
             </div>
             <div id="id4" class="start">
                 <form class="start-content animate" method="post">
@@ -98,16 +100,15 @@
                         <input type="password" placeholder="Enter Password" name="psw" required>
                         <label> <b> Employee Id</b> </label>
                         <input type="number" placeholder="Enter EID" name="eid" required>
-                        <p><button onclick="success()">Login!</button></p>
-
+                        <p><button type="submit" onclick="success()">Login!</button></p>
+                        <p id="done"></p>
+                        <script>
+                            function success() {
+                                document.getElementById("done").innerHTML = alert("Login Success!!");
+                            }
+                        </script>
                     </div>
                 </form>
-                <p id="done"></p>
-                <script>
-                    function success() {
-                        document.getElementById("done").innerHTML = alert("Login Sucess!!");
-                    }
-                </script>
             </div>
         </div>
     </body>

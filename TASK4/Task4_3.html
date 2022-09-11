@@ -32,11 +32,11 @@
     </style>
 </head>
 <body>
-    <h2 align="center"> Bonus Check (IT)!!</h2>
+    <h2 align="center"> Bonus Check!!</h2>
     <button onclick="salary()"> Your Salary</button> <br><br>
     <button onclick="bonus()"> Your Bonus</button> <br><br>
     <button onclick="total()"> Total</button> <br><br>
-    <p id="extra"></p>
+    <p id="extra1"></p>
     <script>
     function salary() {
         let text;
@@ -46,9 +46,9 @@
         } else {
             text = "Dear IT Member!!, Your salary is Rs.43,655.";
         }
-        alert(document.getElementById("extra").innerHTML = text);
+        alert(document.getElementById("extra1").innerHTML = text);
     }
-     
+    
     function bonus() {
         let text;
         let person = prompt("Please enter your ID:");
@@ -57,7 +57,7 @@
         } else {
             text = "Dear IT Member!!, Your Bonus is Rs.21,827.";
         }
-        alert(document.getElementById("extra").innerHTML = text);
+        alert(document.getElementById("extra1").innerHTML = text);
     }
     
     function total() {
@@ -68,8 +68,116 @@
         } else {
             text = "Dear IT Member!!, Total Salary is Rs.65,482.";
         }
-        alert(document.getElementById("extra").innerHTML = text);
+        alert(document.getElementById("extra1").innerHTML = text);
     }
+    </script>
+
+        <p id="extra2"></p>
+        <script>
+        function salary() {
+            let text;
+            let person = prompt("Please enter your ID:");
+            if (person == null || person == "") {
+                text = alert("Enter your ID!!");
+            } else {
+                text = "Dear Admin!!, Your salary is Rs.49,545.";
+            }
+            alert(document.getElementById("extra2").innerHTML = text);
+        }
+        
+        function bonus() {
+            let text;
+            let person = prompt("Please enter your ID:");
+            if (person == null || person == "") {
+                text = alert("Enter your ID!!");
+            } else {
+                text = "Dear Admin!!, Your Bonus is Rs.14,863.5.";
+            }
+            alert(document.getElementById("extra2").innerHTML = text);
+        }
+
+        function total() {
+            let text;
+            let person = prompt("Please enter your ID:");
+            if (person == null || person == "") {
+                text = alert("Enter your ID!!");
+            } else {
+                text = "Dear Admin!!, Total Salary is Rs.64,408.";
+            }
+            alert(document.getElementById("extra2").innerHTML = text);
+        }
+        </script>
+
+        <p id="extra3"></p>
+            <script>
+            function salary() {
+                let text;
+                let person = prompt("Please enter your ID:");
+                if (person == null || person == "") {
+                    text = alert("Enter your ID!!");
+                } else {
+                    text = "Dear Tester!!, Your salary is Rs.38,665.";
+                }
+                alert(document.getElementById("extra3").innerHTML = text);
+            }
+            
+            function bonus() {
+                let text;
+                let person = prompt("Please enter your ID:");
+                if (person == null || person == "") {
+                    text = alert("Enter your ID!!");
+                } else {
+                    text = "Dear Tester!!, Your Bonus is Rs.17,399.25 ";
+                }
+                alert(document.getElementById("extra3").innerHTML = text);
+            }
+            
+            function total() {
+                let text;
+                let person = prompt("Please enter your ID:");
+                if (person == null || person == "") {
+                    text = alert("Enter your ID!!");
+                } else {
+                    text = "Dear Tester!!, Total Salary is Rs.56,064.25.";
+                }
+                alert(document.getElementById("extra3").innerHTML = text);
+            }
+            </script>
+
+        <p id="extra4"></p>
+        <script>
+        function salary() {
+            let text;
+            let person = prompt("Please enter your ID:");
+            if (person == null || person == "") {
+                text = alert("Enter your ID!!");
+            } else {
+                text = "Dear Employee!!, Your salary is Rs.33,665.";
+            }
+            alert(document.getElementById("extra4").innerHTML = text);
+        }
+        
+        function bonus() {
+            let text;
+            let person = prompt("Please enter your ID:");
+            if (person == null || person == "") {
+                text = alert("Enter your ID!!");
+            } else {
+                text = "Dear Employee!!, Your Bonus is Rs.6,733.";
+            }
+            alert(document.getElementById("extra4").innerHTML = text);
+        }
+
+        function total() {
+            let text;
+            let person = prompt("Please enter your ID:");
+            if (person == null || person == "") {
+                text = alert("Enter your ID!!");
+            } else {
+                text = "Dear Employee!!, Total Salary is Rs.40,398.";
+            }
+            alert(document.getElementById("extra4").innerHTML = text);
+        }
     </script>
 </body>
 </html>
