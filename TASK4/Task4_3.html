@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus</title>
+    <style>
+        .all{
+            width:80%;
+            height: 100%;
+            text-align: center;
+            background-position: center;
+            margin: auto;
+            background-image: url(Images/img10.jpg);
+        }
+        button {
+            background-color:rgb(7, 109, 109);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 12px;
+            text-decoration:solid;
+            cursor: pointer;
+            text-align: center;
+            width: 20%;
+        }
+        button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center"> Bonus Check (IT)!!</h2>
+    <button onclick="salary()"> Your Salary</button> <br><br>
+    <button onclick="bonus()"> Your Bonus</button> <br><br>
+    <button onclick="total()"> Total</button> <br><br>
+    <p id="extra"></p>
+    <script>
+    function salary() {
+        let text;
+        let person = prompt("Please enter your ID:");
+        if (person == null || person == "") {
+            text = alert("Enter your ID!!");
+        } else {
+            text = "Dear IT Member!!, Your salary is Rs.43,655.";
+        }
+        alert(document.getElementById("extra").innerHTML = text);
+    }
+     
+    function bonus() {
+        let text;
+        let person = prompt("Please enter your ID:");
+        if (person == null || person == "") {
+            text = alert("Enter your ID!!");
+        } else {
+            text = "Dear IT Member!!, Your Bonus is Rs.21,827.";
+        }
+        alert(document.getElementById("extra").innerHTML = text);
+    }
+    
+    function total() {
+        let text;
+        let person = prompt("Please enter your ID:");
+        if (person == null || person == "") {
+            text = alert("Enter your ID!!");
+        } else {
+            text = "Dear IT Member!!, Total Salary is Rs.65,482.";
+        }
+        alert(document.getElementById("extra").innerHTML = text);
+    }
+    </script>
+</body>
+</html>

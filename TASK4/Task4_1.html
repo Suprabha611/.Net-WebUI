@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login!!!</title>
+    <style>
+        input[type=text], input[type=password] {
+            width: 30%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border-radius: 12px;
+            border: 1px white;
+            box-sizing: border-box;
+        }
+        .full{
+            width:80%;
+            height: 100%;
+            text-align: center;
+            background-position: center;
+            margin: auto;
+            background-image: url(Images/img10.jpg);
+        }
+        button {
+            background-color:rgb(7, 109, 109);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 12px;
+            text-decoration:solid;
+            cursor: pointer;
+            text-align: center;
+
+            width: 20%;
+        }
+        button:hover {
+            opacity: 0.7;
+        }
+        .container {
+            padding: 16px;
+        }
+        img.icon {
+            width: 25%;
+        }
+        .formim{
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-image: url(Images/img10.jpg); height: 570px;" >
+        <form onsubmit ="return validateForm()" class="full" method="post" action="/TASK4/Task4_2.html">
+            <legend style="text-align:center;"><font size="+2"><b>Login Now!!</b></font></legend>
+            <img src="Images/img15.png" class="icon">
+            <div class="container"></div>
+                <b>Full Name* </b>
+                <input type = "text" id = "name" value = ""> <br>
+                <span id = "blankMsg" style="color:red"> </span> <br><br>
+                <b>Password* </b>
+                <input type = "password" id = "pswd" value = "">
+                <span id = "message" style="color:red"> </span> <br><br>
+                <button type="submit" value=""> Login!!</button>
+        </form>     
+    </div>
+    <script>
+        function validateForm() {
+            var pw = document.getElementById("pswd").value;
+            var name = document.getElementById("name").value;
+        
+            if(name == "") {
+              document.getElementById("blankMsg").innerHTML = "*Fill the name";
+              return false;
+            }
+            if(!isNaN(name)){
+              document.getElementById("blankMsg").innerHTML = "*Only characters are allowed";
+              return false;
+            }
+            if(pw == "") {
+              document.getElementById("message").innerHTML = "**Fill the password please!";
+              return false;
+            }
+            if(pw.length < 8) {
+              document.getElementById("message").innerHTML = "**Wrong Password";
+              return false;
+            }
+            if(pw.length > 15) {
+              document.getElementById("message").innerHTML = "**Wrong Password";
+              return false;
+            }
+            alert ("Login success!!!");
+            document.write("Select your Department!!");
+        }
+    </script>
+    <input type="button" onclick="view(20034)" value="VIEW!!">
+    <script>
+        function bonus(salary) {
+            alert("Festival Bonus for you " + (salary + salary));
+        }
+    </script>
+</body>
+</html>
